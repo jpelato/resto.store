@@ -1,30 +1,29 @@
 <script setup>
-import Glossary from '@/views/pages/sales-entry/Glossary.vue';
-import Restaurant from '@/views/pages/sales-entry/Restaurant.vue';
-import SalesEntryNotification from '@/views/pages/sales-entry/SalesEntryNotification.vue';
-import { useRoute } from 'vue-router';
+import Glossary from '@/views/pages/sales-entry/Glossary.vue'
+import Restaurant from '@/views/pages/sales-entry/Restaurant.vue'
+import SalesEntryNotification from '@/views/pages/sales-entry/SalesEntryNotification.vue'
+import {
+  useRoute,
+} from 'vue-router'
 
 const route = useRoute()
 const activeTab = ref(route.params.tab)
 
+
 // tabs
-const tabs = [
-  {
-    title: 'Glossary',
-    icon: 'bx-shopping-bag',
-    tab: 'glossary',
-  },
-  {
-    title: 'Restaurant',
-    icon: 'bx-food-menu',
-    tab: 'restaurant',
-  },
-  {
-    title: 'Sales Entry Notification',
-    icon: 'bx-bell',
-    tab: 'notification',
-  },
-]
+const tabs = [{
+  title: 'Glossary',
+  icon: 'uil:shop',
+  tab: 'glossary',
+}, {
+  title: 'Restaurant',
+  icon: 'material-symbols:food-bank',
+  tab: 'restaurant',
+}, {
+  title: 'Sales Entry Notification',
+  icon: 'bx-bell',
+  tab: 'notification',
+} ]
 </script>
 
 <template>
@@ -47,7 +46,6 @@ const tabs = [
       </VTab>
     </VTabs>
     <VDivider />
-
     <VWindow
       v-model="activeTab"
       class="mt-5 disable-tab-transition"
@@ -56,12 +54,10 @@ const tabs = [
       <VWindowItem value="glossary">
         <Glossary />
       </VWindowItem>
-
       <!-- Security -->
       <VWindowItem value="restaurant">
         <Restaurant />
       </VWindowItem>
-
       <!-- Notification -->
       <VWindowItem value="notification">
         <SalesEntryNotification />

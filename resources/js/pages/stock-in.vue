@@ -1,24 +1,24 @@
 <script setup>
-import HistoryLog from '@/views/pages/stock-in/HistoryLog.vue';
-import StockIn from '@/views/pages/stock-in/StockIn.vue';
-import { useRoute } from 'vue-router';
+import HistoryLog from '@/views/pages/stock-in/HistoryLog.vue'
+import StockIn from '@/views/pages/stock-in/StockIn.vue'
+import {
+  useRoute,
+} from 'vue-router'
 
 const route = useRoute()
 const activeTab = ref(route.params.tab)
 
+
 // tabs
-const tabs = [
-  {
-    title: 'Stock In',
-    icon: 'bx-list-plus',
-    tab: 'stock-in',
-  },
-  {
-    title: 'History Log',
-    icon: 'bx-spreadsheet',
-    tab: 'history-log',
-  },
-]
+const tabs = [{
+  title: 'Stock In',
+  icon: 'bx-list-plus',
+  tab: 'stock-in',
+}, {
+  title: 'History Log',
+  icon: 'bx-spreadsheet',
+  tab: 'history-log',
+} ]
 </script>
 
 <template>
@@ -41,7 +41,6 @@ const tabs = [
       </VTab>
     </VTabs>
     <VDivider />
-
     <VWindow
       v-model="activeTab"
       class="mt-5 disable-tab-transition"
@@ -50,7 +49,6 @@ const tabs = [
       <VWindowItem value="stock-in">
         <StockIn />
       </VWindowItem>
-
       <!-- Security -->
       <VWindowItem value="history-log">
         <HistoryLog />

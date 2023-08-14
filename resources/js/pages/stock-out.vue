@@ -1,24 +1,24 @@
 <script setup>
-import HistoryLog from '@/views/pages/stock-out/HistoryLog.vue';
-import StockOut from '@/views/pages/stock-out/StockOut.vue';
-import { useRoute } from 'vue-router';
+import HistoryLog from '@/views/pages/stock-out/HistoryLog.vue'
+import StockOut from '@/views/pages/stock-out/StockOut.vue'
+import {
+  useRoute,
+} from 'vue-router'
 
 const route = useRoute()
 const activeTab = ref(route.params.tab)
 
+
 // tabs
-const tabs = [
-  {
-    title: 'Stock Out',
-    icon: 'bx-list-minus',
-    tab: 'stock-out',
-  },
-  {
-    title: 'History Log',
-    icon: 'bx-spreadsheet',
-    tab: 'history-log',
-  },
-]
+const tabs = [{
+  title: 'Stock Out',
+  icon: 'bx-list-minus',
+  tab: 'stock-out',
+}, {
+  title: 'History Log',
+  icon: 'bx-spreadsheet',
+  tab: 'history-log',
+} ]
 </script>
 
 <template>
@@ -41,7 +41,6 @@ const tabs = [
       </VTab>
     </VTabs>
     <VDivider />
-
     <VWindow
       v-model="activeTab"
       class="mt-5 disable-tab-transition"
@@ -50,7 +49,6 @@ const tabs = [
       <VWindowItem value="stock-out">
         <StockOut />
       </VWindowItem>
-
       <!-- Security -->
       <VWindowItem value="history-log">
         <HistoryLog />

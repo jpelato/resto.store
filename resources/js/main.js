@@ -9,6 +9,8 @@ import '@layouts/styles/index.scss'
 import '@styles/styles.scss'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
+import { VDataTable } from 'vuetify/labs/VDataTable'
+import { VInfiniteScroll } from 'vuetify/labs/VInfiniteScroll'
 
 loadFonts()
 
@@ -16,6 +18,8 @@ loadFonts()
 // Create vue app
 const app = createApp(App)
 
+app.component('VDataTable', VDataTable)
+app.component('VInfiniteScroll', VInfiniteScroll)
 
 // Use plugins
 app.use(vuetify)

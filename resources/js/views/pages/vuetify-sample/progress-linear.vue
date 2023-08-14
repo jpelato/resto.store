@@ -1,0 +1,23 @@
+<template>
+  <div>
+    <VProgressLinear
+      indeterminate
+      color="yellow-darken-2"
+    />
+    <br>
+    <VProgressLinear
+      indeterminate
+      color="green"
+    />
+    <br>
+    <VProgressLinear
+      indeterminate
+      color="teal"
+    />
+    <br>
+    <VProgressLinear
+      indeterminate
+      color="cyan"
+    />
+  </div>
+</template>

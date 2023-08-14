@@ -72,7 +72,7 @@ const upgradeBanner = computed(() => {
       <VerticalNavLink
         :item="{
           title: 'Dashboard',
-          icon: 'bx-home',
+          icon: 'carbon:dashboard',
           to: '/dashboard',
         }"
       />
@@ -100,28 +100,28 @@ const upgradeBanner = computed(() => {
       <VerticalNavLink
         :item="{
           title: 'Inventories',
-          icon: 'bx-coin-stack',
+          icon: 'mingcute:inventory-line',
           to: '/inventories',
         }"
       />
       <VerticalNavLink
         :item="{
           title: 'Sales Records',
-          icon: 'bx-layer',
+          icon: 'foundation:burst-sale',
           to: '/sales-records',
         }"
       />
       <VerticalNavLink
         :item="{
           title: 'P.T.CAsh',
-          icon: 'bx-money-withdraw',
+          icon: 'ri:exchange-funds-fill',
           to: '/pt-cash',
         }"
       />
       <VerticalNavLink
         :item="{
           title: 'Reports',
-          icon: 'bxs-report',
+          icon: 'tabler:report',
           to: '/reports',
         }"
       />
@@ -135,7 +135,7 @@ const upgradeBanner = computed(() => {
       <VerticalNavLink
         :item="{
           title: 'Resto Menu Settings',
-          icon: 'bx-food-menu',
+          icon: 'material-symbols:menu-book',
           to: '/resto-menu-settings',
         }"
       />
