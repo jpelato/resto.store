@@ -210,20 +210,20 @@ const transactions = [{
                       >
                         <div class="d-flex align-center">
                           <VBtn
-                            size="x-small"
+                            size="24"
                             variant="outlined"
                             icon="bx-minus"
                             class="ma-1"
                           />
                           <VAvatar
                             color="info"
-                            size="small"
+                            size="24"
                             class="ma-1"
                           >
                             3
                           </VAvatar>
                           <VBtn
-                            size="x-small"
+                            size="24"
                             variant="outlined"
                             icon="bx-plus"
                             class="ma-1"
