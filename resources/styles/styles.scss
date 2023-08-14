@@ -1,0 +1,56 @@
+// Write your overrides
+body,table,input,div{
+    font-size: small;
+    font-weight: bold;
+}
+input{
+    font-weight: bold;
+}
+.text-end{
+    text-align: end !important;
+}
+div.v-card-text{
+    font-size: small;
+}
+
+.itemconfiguration
+{
+    height: 20vh;
+    overflow: auto;
+    padding: 10px;
+}
+
+.menuconfiguration
+{
+    height: 56vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+div::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(41, 38, 38, 0.3);
+  border-radius: 2px;
+  background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar
+{
+  width: 5px;
+  height: 5px;
+  background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(197, 26, 69, 0.3);
+  background-color: #555;
+}
+
+// $window-height: get-vh(72px);
+
+// @function get-vh($target) { 
+//     $vh-context: (1000*.01) * 1px;
+//     @return ($target/$vh-context) * 1vh;
+// }
